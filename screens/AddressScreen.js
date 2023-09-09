@@ -67,25 +67,15 @@ const AddressScreen = () => {
     };
 
     return (
-        <ScrollView style={{ marginTop: 50 }}>
-            <View style={{ height: 50, backgroundColor: "#00CED1" }} />
-
-            <View style={{ padding: 10 }}>
-                <Text style={{ fontSize: 17, fontWeight: "bold" }}>
+        <ScrollView style={{ marginTop: 50, backgroundColor: "#FAF1E4" }}>
+            <View style={{ height: 50, backgroundColor: "#435334" }}>
+            <Text style={{ fontSize: 17, fontWeight: "bold", textAlign:"center"}}>
                     Add a new Address
                 </Text>
 
-                <TextInput
-                    placeholderTextColor={"black"}
-                    placeholder="India"
-                    style={{
-                        padding: 10,
-                        borderColor: "#D0D0D0",
-                        borderWidth: 1,
-                        marginTop: 10,
-                        borderRadius: 5,
-                    }}
-                />
+            </View>
+
+            <View style={{ padding: 10 }}>
 
                 <View style={{ marginVertical: 10 }}>
                     <Text style={{ fontSize: 15, fontWeight: "bold" }}>
@@ -103,7 +93,7 @@ const AddressScreen = () => {
                             marginTop: 10,
                             borderRadius: 5,
                         }}
-                        placeholder="enter your name"
+                        placeholder="Enter your name"
                     />
                 </View>
 
@@ -129,7 +119,7 @@ const AddressScreen = () => {
 
                 <View style={{ marginVertical: 10 }}>
                     <Text style={{ fontSize: 15, fontWeight: "bold" }}>
-                        Flat,House No,Building,Company
+                        Flat/House No/Building/Company
                     </Text>
 
                     <TextInput
@@ -143,13 +133,13 @@ const AddressScreen = () => {
                             marginTop: 10,
                             borderRadius: 5,
                         }}
-                        placeholder=""
+                        placeholder="House Number"
                     />
                 </View>
 
                 <View>
                     <Text style={{ fontSize: 15, fontWeight: "bold" }}>
-                        Area,Street,sector,village
+                        Area/District
                     </Text>
                     <TextInput
                         value={street}
@@ -162,7 +152,26 @@ const AddressScreen = () => {
                             marginTop: 10,
                             borderRadius: 5,
                         }}
-                        placeholder=""
+                        placeholder="Area"
+                    />
+                </View>
+
+                <View>
+                    <Text style={{ fontSize: 15, fontWeight: "bold" }}>
+                        Country
+                    </Text>
+                    <TextInput
+                        value={street}
+                        onChangeText={(text) => setStreet(text)}
+                        placeholderTextColor={"black"}
+                        style={{
+                            padding: 10,
+                            borderColor: "#D0D0D0",
+                            borderWidth: 1,
+                            marginTop: 10,
+                            borderRadius: 5,
+                        }}
+                        placeholder="Country"
                     />
                 </View>
 
@@ -181,13 +190,13 @@ const AddressScreen = () => {
                             marginTop: 10,
                             borderRadius: 5,
                         }}
-                        placeholder="Eg near appollo hospital"
+                        placeholder="Eg: near appollo hospital"
                     />
                 </View>
 
                 <View>
                     <Text style={{ fontSize: 15, fontWeight: "bold" }}>
-                        Pincode
+                        Postal Code
                     </Text>
 
                     <TextInput
@@ -201,14 +210,14 @@ const AddressScreen = () => {
                             marginTop: 10,
                             borderRadius: 5,
                         }}
-                        placeholder="Enter Pincode"
+                        placeholder="Enter Postal Code"
                     />
                 </View>
 
                 <Pressable
                     onPress={handleAddAddress}
                     style={{
-                        backgroundColor: "#FFC72C",
+                        backgroundColor: "#9EB384",
                         padding: 19,
                         borderRadius: 6,
                         justifyContent: "center",
