@@ -40,7 +40,7 @@ const CartScreen = () => {
         >
             <View
                 style={{
-                    backgroundColor: "#00CED1",
+                    backgroundColor: "#cedebd",
                     padding: 10,
                     flexDirection: "row",
                     alignItems: "center",
@@ -64,7 +64,7 @@ const CartScreen = () => {
                         size={22}
                         color="black"
                     />
-                    <TextInput placeholder="Search Amazon.in" />
+                    <TextInput placeholder="Search" />
                 </Pressable>
 
                 <Feather name="mic" size={24} color="black" />
@@ -84,12 +84,12 @@ const CartScreen = () => {
                     {total}
                 </Text>
             </View>
-            <Text style={{ marginHorizontal: 10 }}>EMI details Available</Text>
+            
 
             <Pressable
                 onPress={() => navigation.navigate("Confirm")}
                 style={{
-                    backgroundColor: "#FFC72C",
+                    backgroundColor: "#cedebd",
                     padding: 10,
                     borderRadius: 5,
                     justifyContent: "center",
