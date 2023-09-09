@@ -47,16 +47,16 @@ const LoginScreen = () => {
 	return (
 		<SafeAreaView style={{ flex: 1, backgroundColor: "white", alignItems: "center" }}>
 			<View>
-				<Image style={{ width: 150, height: 100 }} source={{
-					uri: "https://assets.stickpng.com/thumbs/6160562276000b00045a7d97.png",
+				<Image style={{ width: 200, height: 200, marginVertical: 20 }} source={{
+					uri: "https://res.cloudinary.com/ducirgwnz/image/upload/v1694233861/ezcart-high-resolution-logo-black-on-transparent-background_aoqfrk.png",
 				}} />
 			</View>
 
 			<KeyboardAvoidingView>
 				<View style={{ alignItems: "center" }}>
-					<Text style={{ fontSize: 17, fontWeight: "bold", marginTop: 12, color: "#041E42" }}>Login In to Your Account</Text>
+					<Text style={{ fontSize: 17, fontWeight: "bold", marginTop: 50, color: "#041E42" }}>Login In to Your Account</Text>
 				</View>
-				<View style={{ marginTop: 70 }}>
+				<View style={{ marginTop: 20 }}>
 					<View style={{
 						flexDirection: "row",
 						alignItems: "center",
@@ -97,7 +97,7 @@ const LoginScreen = () => {
 					</Text>
 				</View>
 
-				<Pressable style={{ width: 200, backgroundColor: '#FEBE10', borderRadius: 6, marginLeft: "auto", marginRight: "auto", padding: 15, marginTop: 70 }} onPress={handleLogin}>
+				<Pressable style={{ width: 200, backgroundColor: '#435334', borderRadius: 6, marginLeft: "auto", marginRight: "auto", padding: 15, marginTop: 70 }} onPress={handleLogin}>
 					<Text style={{ textAlign: "center", color: "white", fontSize: 16, fontWeight: "bold" }}>Login</Text>
 				</Pressable>
 				<Pressable onPress={() => navigation.navigate("Register")} style={{ marginLeft: "auto", marginRight: "auto", padding: 15, marginTop: 5 }}>

@@ -22,13 +22,13 @@ const ProfileScreen = () => {
         navigation.setOptions({
             headerTitle: "",
             headerStyle: {
-                backgroundColor: "#00CED1",
+                backgroundColor: "#9EB384",
             },
             headerLeft: () => (
                 <Image
-                    style={{ width: 140, height: 120, resizeMode: "contain" }}
+                    style={{ width: 100, height: 35, resizeMode: "contain", marginLeft:12 }}
                     source={{
-                        uri: "https://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c518.png",
+                        uri: "https://res.cloudinary.com/ducirgwnz/image/upload/v1694238346/ezcart-high-resolution-logo-ablack-on-transparent-background_vtrmam.png",
                     }}
                 />
             ),

@@ -27,16 +27,16 @@ const StackNavigator = () => {
                     component={HomeScreen}
                     options={{
                         tabBarLabel: "Home",
-                        tabBarLabelStyle: { color: "#008E97" },
+                        tabBarLabelStyle: { color: "#435334" },
                         headerShown: false,
                         tabBarIcon: ({ focused }) =>
                             focused ? (
-                                <Entypo name="home" size={24} color="#008E97" />
+                                <Entypo name="home" size={24} color="#435334" />
                             ) : (
                                 <AntDesign
                                     name="home"
                                     size={24}
-                                    color="black"
+                                    color="#435334"
                                 />
                             ),
                     }}
@@ -46,19 +46,19 @@ const StackNavigator = () => {
                     component={ProfileScreen}
                     options={{
                         tabBarLabel: "Profile",
-                        tabBarLabelStyle: { color: "#008E97" },
+                        tabBarLabelStyle: { color: "#435334" },
                         tabBarIcon: ({ focused }) =>
                             focused ? (
                                 <Ionicons
                                     name="person"
                                     size={24}
-                                    color="#008E97"
+                                    color="#435334"
                                 />
                             ) : (
                                 <Ionicons
                                     name="person-outline"
                                     size={24}
-                                    color="black"
+                                    color="#435334"
                                 />
                             ),
                     }}
@@ -68,20 +68,20 @@ const StackNavigator = () => {
                     component={CartScreen}
                     options={{
                         tabBarLabel: "Cart",
-                        tabBarLabelStyle: { color: "#008E97" },
+                        tabBarLabelStyle: { color: "#435334" },
                         headerShown: false,
                         tabBarIcon: ({ focused }) =>
                             focused ? (
                                 <Ionicons
                                     name="ios-cart"
                                     size={24}
-                                    color="#008E97"
+                                    color="#435334"
                                 />
                             ) : (
                                 <Ionicons
                                     name="ios-cart-outline"
                                     size={24}
-                                    color="black"
+                                    color="#435334"
                                 />
                             ),
                     }}
