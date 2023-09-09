@@ -16,23 +16,23 @@ const AddAddressScreen = () => {
     const navigation = useNavigation();
     const [addresses, setAddresses] = useState([
         {
-            name: "Matara",
-            monileNo: "0714810619",
+            name: "Kamal",
+            mobileNo: "0714810619",
             houseNo: "123",
-            street: "String",
-            landmark: "324",
-            city: "fiean",
-            country: "hbfibd",
+            street: "Chatham St.",
+            landmark: "Office",
+            city: "Matara",
+            country: "Srilanka",
             postalCode: "34545",
         },
         {
-            name: "Matara",
-            monileNo: "0714810619",
-            houseNo: "123",
-            street: "String",
-            landmark: "324",
-            city: "fiean",
-            country: "hbfibd",
+            name: "Saman",
+            mobileNo: "0714810619",
+            houseNo: "339/C",
+            street: "Heave Avenue",
+            landmark: "House",
+            city: "Horana",
+            country: "Srilanka",
             postalCode: "34545",
         },
     ]);
@@ -64,11 +64,11 @@ const AddAddressScreen = () => {
     return (
         <ScrollView
             showsVerticalScrollIndicator={false}
-            style={{ marginTop: 50 }}
+            style={{ marginTop: 50, backgroundColor: "#FAF1E4", }}
         >
             <View
                 style={{
-                    backgroundColor: "#00CED1",
+                    backgroundColor: "#435334",
                     padding: 10,
                     flexDirection: "row",
                     alignItems: "center",
@@ -92,7 +92,7 @@ const AddAddressScreen = () => {
                         size={22}
                         color="black"
                     />
-                    <TextInput placeholder="Search Amazon.in" />
+                    <TextInput placeholder="Search in EZ-Cart" />
                 </Pressable>
 
                 <Feather name="mic" size={24} color="black" />
@@ -110,7 +110,7 @@ const AddAddressScreen = () => {
                         alignItems: "center",
                         justifyContent: "space-between",
                         marginTop: 10,
-                        borderColor: "#D0D0D0",
+                        borderColor: "#435334",
                         borderWidth: 1,
                         borderLeftWidth: 0,
                         borderRightWidth: 0,
@@ -160,7 +160,7 @@ const AddAddressScreen = () => {
                             </View>
 
                             <Text style={{ fontSize: 15, color: "#181818" }}>
-                                {item?.houseNo}, {item?.landmark}
+                                {item?.houseNo}, 
                             </Text>
 
                             <Text style={{ fontSize: 15, color: "#181818" }}>
@@ -168,14 +168,14 @@ const AddAddressScreen = () => {
                             </Text>
 
                             <Text style={{ fontSize: 15, color: "#181818" }}>
-                                India, Bangalore
+                                {item?.city}, {item?.country}
                             </Text>
 
                             <Text style={{ fontSize: 15, color: "#181818" }}>
-                                phone No : {item?.mobileNo}
+                                {item?.mobileNo}
                             </Text>
                             <Text style={{ fontSize: 15, color: "#181818" }}>
-                                pin code : {item?.postalCode}
+                                postal code : {item?.postalCode}
                             </Text>
 
                             <View
