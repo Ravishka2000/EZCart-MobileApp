@@ -285,7 +285,7 @@ const HomeScreen = () => {
                 <ScrollView>
                     <View
                         style={{
-                            backgroundColor: "#00CED1",
+                            backgroundColor: "#9EB384",
                             padding: 10,
                             flexDirection: "row",
                             alignItems: "center",
@@ -309,7 +309,7 @@ const HomeScreen = () => {
                                 size={22}
                                 color="black"
                             />
-                            <TextInput placeholder="Search Amazon.in" />
+                            <TextInput placeholder="Search EZCart.in" />
                         </Pressable>
                         <Feather name="mic" size={24} color="black" />
                     </View>
@@ -321,7 +321,7 @@ const HomeScreen = () => {
                             alignItems: "center",
                             gap: 5,
                             padding: 10,
-                            backgroundColor: "#AFEEEE",
+                            backgroundColor: "#CEDEBD",
                         }}
                     >
                         <Ionicons
@@ -528,7 +528,7 @@ const HomeScreen = () => {
                         style={{
                             borderColor: "#B7B7B7",
                             height: 30,
-                            marginBottom: open ? 120 : 15,
+                            marginBottom: open ? 150 : 15,
                         }}
                         open={open}
                         value={category} //genderValue
@@ -613,10 +613,15 @@ const HomeScreen = () => {
                                     marginTop: 10,
                                     backgroundColor:
                                         selectedAddress === item
-                                            ? "#FBCEB1"
+                                            ? "#CEDEBD"
                                             : "white",
                                 }}
                             >
+                                <Entypo
+                                    name="location-pin"
+                                    size={28}
+                                    color="red"
+                                />
                                 <View
                                     style={{
                                         flexDirection: "row",
@@ -632,11 +637,6 @@ const HomeScreen = () => {
                                     >
                                         {item?.name}
                                     </Text>
-                                    <Entypo
-                                        name="location-pin"
-                                        size={24}
-                                        color="red"
-                                    />
                                 </View>
 
                                 <Text
@@ -668,7 +668,7 @@ const HomeScreen = () => {
                                         textAlign: "center",
                                     }}
                                 >
-                                    India, Bangalore
+                                    {item?.city}, {item?.country}
                                 </Text>
                             </Pressable>
                         ))}
@@ -700,68 +700,6 @@ const HomeScreen = () => {
                             </Text>
                         </Pressable>
                     </ScrollView>
-
-                    <View
-                        style={{
-                            flexDirection: "column",
-                            gap: 7,
-                            marginBottom: 30,
-                        }}
-                    >
-                        <View
-                            style={{
-                                flexDirection: "row",
-                                alignItems: "center",
-                                gap: 5,
-                            }}
-                        >
-                            <Entypo
-                                name="location-pin"
-                                size={22}
-                                color="#0066b2"
-                            />
-                            <Text
-                                style={{ color: "#0066b2", fontWeight: "400" }}
-                            >
-                                Enter an Indian pincode
-                            </Text>
-                        </View>
-
-                        <View
-                            style={{
-                                flexDirection: "row",
-                                alignItems: "center",
-                                gap: 5,
-                            }}
-                        >
-                            <Ionicons
-                                name="locate-sharp"
-                                size={22}
-                                color="#0066b2"
-                            />
-                            <Text
-                                style={{ color: "#0066b2", fontWeight: "400" }}
-                            >
-                                Use My Currect location
-                            </Text>
-                        </View>
-
-                        <View
-                            style={{
-                                flexDirection: "row",
-                                alignItems: "center",
-                                gap: 5,
-                            }}
-                        >
-                            <AntDesign name="earth" size={22} color="#0066b2" />
-
-                            <Text
-                                style={{ color: "#0066b2", fontWeight: "400" }}
-                            >
-                                Deliver outside India
-                            </Text>
-                        </View>
-                    </View>
                 </ModalContent>
             </BottomModal>
         </>

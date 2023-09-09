@@ -42,7 +42,7 @@ const ProductItem = ({ item }) => {
             <Pressable
                 onPress={() => addItemToCart(item)}
                 style={{
-                    backgroundColor: "#FFC72C",
+                    backgroundColor: "#CEDEBD",
                     padding: 10,
                     borderRadius: 20,
                     justifyContent: "center",

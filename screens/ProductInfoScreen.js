@@ -37,7 +37,7 @@ const ProductInfoScreen = () => {
         >
             <View
                 style={{
-                    backgroundColor: "#00CED1",
+                    backgroundColor: "#9EB384",
                     padding: 10,
                     flexDirection: "row",
                     alignItems: "center",
@@ -61,7 +61,7 @@ const ProductInfoScreen = () => {
                         size={22}
                         color="black"
                     />
-                    <TextInput placeholder="Search Amazon.in" />
+                    <TextInput placeholder="Search EZCart.in" />
                 </Pressable>
 
                 <Feather name="mic" size={24} color="black" />
@@ -155,7 +155,7 @@ const ProductInfoScreen = () => {
                 </Text>
 
                 <Text style={{ fontSize: 18, fontWeight: "600", marginTop: 6 }}>
-                    ₹{route?.params?.price}
+                    Rs.{route?.params?.price}
                 </Text>
             </View>
 
@@ -201,9 +201,9 @@ const ProductInfoScreen = () => {
                         marginVertical: 5,
                     }}
                 >
-                    Total : ₹{route.params.price}
+                    Total : Rs.{route.params.price}
                 </Text>
-                <Text style={{ color: "#00CED1" }}>
+                <Text style={{ color: "#9EB384" }}>
                     FREE delivery Tomorrow by 3 PM.Order within 10hrs 30 mins
                 </Text>
 
@@ -215,7 +215,7 @@ const ProductInfoScreen = () => {
                         gap: 5,
                     }}
                 >
-                    <Ionicons name="location" size={24} color="black" />
+                    <Ionicons name="location" size={18} color="black" />
 
                     <Text style={{ fontSize: 15, fontWeight: "500" }}>
                         Deliver To Sujan - Bangalore 560019
@@ -225,7 +225,7 @@ const ProductInfoScreen = () => {
 
             <Text
                 style={{
-                    color: "green",
+                    color: "#435334",
                     marginHorizontal: 10,
                     fontWeight: "500",
                 }}
@@ -236,7 +236,7 @@ const ProductInfoScreen = () => {
             <Pressable
                 onPress={() => addItemToCart(route?.params?.item)}
                 style={{
-                    backgroundColor: "#FFC72C",
+                    backgroundColor: "#9EB384",
                     padding: 10,
                     borderRadius: 20,
                     justifyContent: "center",
@@ -256,7 +256,7 @@ const ProductInfoScreen = () => {
 
             <Pressable
                 style={{
-                    backgroundColor: "#FFAC1C",
+                    backgroundColor: "#435334",
                     padding: 10,
                     borderRadius: 20,
                     justifyContent: "center",
@@ -265,7 +265,7 @@ const ProductInfoScreen = () => {
                     marginVertical: 10,
                 }}
             >
-                <Text>Buy Now</Text>
+                <Text style={{ color: "white"}}>Buy Now</Text>
             </Pressable>
         </ScrollView>
     );
