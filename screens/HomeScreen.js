@@ -573,9 +573,9 @@ const HomeScreen = () => {
                 visible={modalVisible}
                 onTouchOutside={() => setModalVisible(!modalVisible)}
             >
-                <ModalContent style={{ width: "100%", height: 400 }}>
+                <ModalContent style={{ width: "100%", height: 400, backgroundColor: "#9EB384"}}>
                     <View style={{ marginBottom: 8 }}>
-                        <Text style={{ fontSize: 16, fontWeight: "500" }}>
+                        <Text style={{ fontSize: 16, fontWeight: "800" }}>
                             Choose your Location
                         </Text>
 
@@ -583,7 +583,6 @@ const HomeScreen = () => {
                             style={{
                                 marginTop: 5,
                                 fontSize: 16,
-                                color: "gray",
                             }}
                         >
                             Select a delivery location to see product
