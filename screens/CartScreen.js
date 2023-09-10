@@ -36,7 +36,7 @@ const CartScreen = () => {
 
     return (
         <ScrollView
-            style={{ marginTop: 55, flex: 1, backgroundColor: "white" }}
+            style={{ marginTop: 50, flex: 1, backgroundColor: "#FAF1E4" }}
         >
             <View
                 style={{
@@ -64,7 +64,7 @@ const CartScreen = () => {
                         size={22}
                         color="black"
                     />
-                    <TextInput placeholder="Search" />
+                    <TextInput placeholder="Search in EZ_Cart" />
                 </Pressable>
 
                 <Feather name="mic" size={24} color="black" />
@@ -197,7 +197,7 @@ const CartScreen = () => {
                                     <Pressable
                                         onPress={() => decreaseQuantity(item)}
                                         style={{
-                                            backgroundColor: "#D8D8D8",
+                                            backgroundColor: "#9EB384",
                                             padding: 7,
                                             borderTopLeftRadius: 6,
                                             borderBottomLeftRadius: 6,
@@ -213,7 +213,7 @@ const CartScreen = () => {
                                     <Pressable
                                         onPress={() => deleteItem(item)}
                                         style={{
-                                            backgroundColor: "#D8D8D8",
+                                            backgroundColor: "#F03838",
                                             padding: 7,
                                             borderTopLeftRadius: 6,
                                             borderBottomLeftRadius: 6,
@@ -240,7 +240,7 @@ const CartScreen = () => {
                                 <Pressable
                                     onPress={() => increaseQuantity(item)}
                                     style={{
-                                        backgroundColor: "#D8D8D8",
+                                        backgroundColor: "#9EB384",
                                         padding: 7,
                                         borderTopLeftRadius: 6,
                                         borderBottomLeftRadius: 6,
@@ -256,7 +256,7 @@ const CartScreen = () => {
                             <Pressable
                                 onPress={() => deleteItem(item)}
                                 style={{
-                                    backgroundColor: "white",
+                                    backgroundColor: "#F03838",
                                     paddingHorizontal: 8,
                                     paddingVertical: 10,
                                     borderRadius: 5,
@@ -278,7 +278,7 @@ const CartScreen = () => {
                         >
                             <Pressable
                                 style={{
-                                    backgroundColor: "white",
+                                    backgroundColor: "#9EB384",
                                     paddingHorizontal: 8,
                                     paddingVertical: 10,
                                     borderRadius: 5,
@@ -291,7 +291,7 @@ const CartScreen = () => {
 
                             <Pressable
                                 style={{
-                                    backgroundColor: "white",
+                                    backgroundColor: "#9EB384",
                                     paddingHorizontal: 8,
                                     paddingVertical: 10,
                                     borderRadius: 5,
