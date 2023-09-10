@@ -115,18 +115,18 @@ const ProfileScreen = () => {
                 <Pressable
                     style={{
                         padding: 10,
-                        backgroundColor: "#E0E0E0",
+                        backgroundColor: "#cedebd",
                         borderRadius: 25,
                         flex: 1,
                     }}
                 >
-                    <Text style={{ textAlign: "center" }}>Your orders</Text>
+                    <Text style={{ textAlign: "center" }}>Your Orders</Text>
                 </Pressable>
 
                 <Pressable
                     style={{
                         padding: 10,
-                        backgroundColor: "#E0E0E0",
+                        backgroundColor: "#cedebd",
                         borderRadius: 25,
                         flex: 1,
                     }}
@@ -146,7 +146,7 @@ const ProfileScreen = () => {
                 <Pressable
                     style={{
                         padding: 10,
-                        backgroundColor: "#E0E0E0",
+                        backgroundColor: "#cedebd",
                         borderRadius: 25,
                         flex: 1,
                     }}
@@ -158,7 +158,7 @@ const ProfileScreen = () => {
                     onPress={logout}
                     style={{
                         padding: 10,
-                        backgroundColor: "#E0E0E0",
+                        backgroundColor: "#cedebd",
                         borderRadius: 25,
                         flex: 1,
                     }}

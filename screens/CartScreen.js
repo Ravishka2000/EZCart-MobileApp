@@ -40,7 +40,7 @@ const CartScreen = () => {
         >
             <View
                 style={{
-                    backgroundColor: "#435334",
+                    backgroundColor: "#cedebd",
                     padding: 10,
                     flexDirection: "row",
                     alignItems: "center",
@@ -84,12 +84,12 @@ const CartScreen = () => {
                     {total}
                 </Text>
             </View>
-            <Text style={{ marginHorizontal: 10 }}>EMI details Available</Text>
+            
 
             <Pressable
                 onPress={() => navigation.navigate("Confirm")}
                 style={{
-                    backgroundColor: "#9EB384",
+                    backgroundColor: "#cedebd",
                     padding: 10,
                     borderRadius: 5,
                     justifyContent: "center",
